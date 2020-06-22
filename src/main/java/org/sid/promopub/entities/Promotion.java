@@ -17,6 +17,5 @@ public class Promotion  implements Serializable {
     private Long id;
     private String name;
     private Boolean available;
-    private String nameCollaborateur;
     private String photoname;
 }

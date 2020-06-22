@@ -29,11 +29,9 @@ public class PromopubApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         repositoryRestConfiguration.exposeIdsFor(Promotion.class, Publicite.class);
-       promotionRepository.save(new Promotion(null,"p1",true,"Col1","php1.png"));
-       promotionRepository.save(new Promotion(null,"p2",true,"Col2","php1.png"));
-       promotionRepository.save(new Promotion(null,"p3",false,"Col1","php1.png"));
-       publiciteRepository.save(new Publicite(null,"Pub1",1500,true,"phpub1"));
-       publiciteRepository.save(new Publicite(null,"Pub2",3000,true,"phpub2"));
-       publiciteRepository.save(new Publicite(null,"Pub3",2000,true,"phpub3"));
+       promotionRepository.save(new Promotion(null,"p1",true,"php1.png"));
+       promotionRepository.save(new Promotion(null,"p2",true,"php1.png"));
+       promotionRepository.save(new Promotion(null,"p3",false,"php1.png"));
+       publiciteRepository.save(new Publicite(null,"Pub1",1500,true,"pub.gif"));
     }
 }
